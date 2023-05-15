@@ -91,7 +91,7 @@ public class Person implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		PersonVO other = (PersonVO) obj;
+		Person other = (Person) obj;
 		return Objects.equals(address, other.address) && Objects.equals(firstName, other.firstName)
 				&& Objects.equals(gender, other.gender) && Objects.equals(id, other.id)
 				&& Objects.equals(lastName, other.lastName);
